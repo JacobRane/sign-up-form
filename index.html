@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up form</title>
+    <link rel="stylesheet" href="styles.css">
+   
+</head>
+<body>
+
+    <div class="left-side">
+        <img class="background-image" src="images/background-image.jpg" alt="Background image of an alley">
+        <div class="logo-stuff">
+            <img class="logo" src="images/endless-knot-wikimedia.png" alt="Image of an endless knot">
+            <div class="logo-text">Exception</div>
+        </div>
+        <footer class="credits">Photo by <a href="https://unsplash.com/@davidemrich">David Emrich</a> from <a href="https://unsplash.com/">Unsplash</a></footer>
+    </div>
+    <div class="right-side">
+        <div class="main-text">This is not a real online service! You know you need something like this 
+            in your life to help you realize your biggest dreams. <div>Sign up <em>now</em> to get started</div>
+        </div>
+        <div class="extra-text">Its for your own good.</div>
+        <div class="form-container">
+            <form id="formthing" class="form" method="get">
+                <h3>Sign-up form</h3>
+
+                <div class="left-form">
+                    <label for="first-name">First name</label>
+                    <input type="text" id="first-name" name="first-name" maxlength="15">
+                    <label for="email">* Email</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="pwd">* Password</label>
+                    <input type="password" name="password" id="password" minlength="5" required>
+                </div>
+
+                <div class="right-form">
+                        <label for="last-name">Last name</label>
+                        <div><input type="text" id="last-name" name="first-name"></div>
+                        <label for="phone">Phone number</label>
+                        <div><input type="tel" id="phone" name="phone-number"></div>
+                        <label for="confirm-pass">Confirm password</label>
+                        <div><input type="password" id="confirm-pass" minlength="2"></div>
+                </div>
+            </form>
+            <button class="submit" type="submit" form="formthing">Create Account</button>
+        </div>
+        <div class="last-text">Already have an account? <a href="">Sign in!</a></div>
+    </div>
+</body>
+</html>
